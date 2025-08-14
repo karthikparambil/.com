@@ -5,207 +5,287 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Karthik | Cybersecurity Portfolio</title>
 <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    html {scroll-behavior: smooth;}
-    body {
-        font-family: 'Fira Code', monospace;
-        background: #0d0d0d;
-        color: #e4e4e4;
-        line-height: 1.6;
-    }
+    /* Base Reset & Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: 'Fira Code', monospace;
+  background: #0d0d0d;
+  color: #e4e4e4;
+  line-height: 1.6;
+}
 
-    /* Video Background */
-    #bg-video {
-        position: fixed;
-        top: 0; left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -2;
-        object-fit: cover;
-    }
-    .overlay {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(10, 10, 10, 0.85);
-        z-index: -1;
-    }
+/* Video Background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  z-index: -1;
+}
 
-    /* Section Styling */
-    section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 80px 20px;
-    }
-    h2 {
-        background: linear-gradient(90deg, #5f5fff, #bb86fc);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+/* Sections */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+h2 {
+  background: linear-gradient(90deg, #5f5fff, #bb86fc);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 20px;
+}
 
-    /* Hero Section */
-    .hero {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .hero h1 {
-        font-size: 3rem;
-        background: linear-gradient(90deg, #5f5fff, #bb86fc);
-        -webkit-background-clip: text;
-        color: transparent;
-        text-shadow: 0 0 15px rgba(95,95,255,0.5);
-    }
-    .hero p {
-        font-size: 1.2rem;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid #bb86fc;
-        animation: typing 4s steps(40, end), blink .75s step-end infinite;
-    }
-    @keyframes typing { from {width: 0} to {width: 100%} }
-    @keyframes blink { 50% {border-color: transparent} }
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  background: linear-gradient(90deg, #5f5fff, #bb86fc);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 15px rgba(95, 95, 255, 0.5);
+}
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #bb86fc;
+  animation: typing 4s steps(40, end), blink .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
 
-    /* Skills & Projects Grid */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    .card {
-        background: rgba(255,255,255,0.05);
-        border: 1px solid rgba(95,95,255,0.4);
-        border-radius: 10px;
-        padding: 20px;
-        backdrop-filter: blur(6px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 20px rgba(95,95,255,0.6);
-    }
+/* Grid Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(95, 95, 255, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(95, 95, 255, 0.6);
+}
 
-    /* Timeline for Experience */
-    .timeline {
-        border-left: 2px solid #5f5fff;
-        padding-left: 20px;
-    }
-    .timeline-item {
-        margin-bottom: 30px;
-    }
-    .timeline-item h3 {
-        color: #bb86fc;
-        margin-bottom: 5px;
-    }
-    .timeline-item span {
-        font-size: 0.9rem;
-        color: #aaa;
-    }
+/* Timeline */
+.timeline {
+  border-left: 2px solid #5f5fff;
+  padding-left: 20px;
+}
+.timeline-item {
+  margin-bottom: 30px;
+}
+.timeline-item h3 {
+  color: #bb86fc;
+  margin-bottom: 5px;
+}
+.timeline-item span {
+  font-size: 0.9rem;
+  color: #aaa;
+}
 
-    /* Contact */
-      /* Contact layout */
+/* Contact */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+.contact-form {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(95, 95, 255, 0.18);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+.contact-info {
+  background: linear-gradient(180deg, rgba(95, 95, 255, 0.06), rgba(187, 134, 252, 0.03));
+  border: 1px solid rgba(95, 95, 255, 0.14);
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+.contact-info a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: #5f5fff;
+}
+.form-row {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #dcdfff;
+}
+input[type="text"], input[type="email"], textarea {
+  background: rgba(0, 0, 0, 0.45);
+  color: #e9eefc;
+  border: 1px solid rgba(95, 95, 255, 0.16);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: inherit;
+  outline: none;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 12px rgba(95, 95, 255, 0.14);
+  border-color: rgba(95, 95, 255, 0.4);
+}
+.meta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+  color: #9aa0ff;
+}
+.char-count { opacity: 0.9; }
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  align-items: center;
+}
+button {
+  background: linear-gradient(90deg, #5f5fff, #bb86fc);
+  color: #07112a;
+  font-weight: 700;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button.ghost {
+  background: transparent;
+  color: #d6d6ff;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.error {
+  color: #ff8b9e;
+  font-size: 0.85rem;
+  min-height: 1.1em;
+}
+#form-status {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #bfe5c7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(95, 95, 255, 0.4);
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Floating Nav */
+.floating-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(95, 95, 255, 0.4);
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 0 15px rgba(95, 95, 255, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+.floating-nav a {
+  color: #e4e4e4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.floating-nav a:hover {
+  color: #bb86fc;
+}
+
+/* Media Queries */
+@media (max-width: 880px) {
   .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 32px;
-    align-items: start;
+    grid-template-columns: 1fr;
   }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+  .hero {
+    padding: 0 10px;
+  }
+  .floating-nav {
+    gap: 12px;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .floating-nav {
+    flex-wrap: wrap;
+    bottom: 10px;
+    padding: 8px;
+  }
+}
 
-  /* Responsive single-column on small screens */
-  @media (max-width: 880px) {
-    .contact-wrapper { grid-template-columns: 1fr; }
-  }
-
-  .contact-form {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(95,95,255,0.18);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(6px);
-  }
-  .contact-info {
-    background: linear-gradient(180deg, rgba(95,95,255,0.06), rgba(187,134,252,0.03));
-    border: 1px solid rgba(95,95,255,0.14);
-    padding: 18px;
-    border-radius: 12px;
-    font-size: 0.95rem;
-  }
-  .contact-info a { color: #bb86fc; text-decoration: none; }
-  .contact-info a:hover { color: #5f5fff; }
-
-  .form-row { margin-bottom: 14px; display:flex; flex-direction:column; gap:6px; }
-  label { font-weight:600; font-size:0.9rem; color: #dcdfff; }
-  input[type="text"], input[type="email"], textarea {
-    background: rgba(0,0,0,0.45);
-    color: #e9eefc;
-    border: 1px solid rgba(95,95,255,0.16);
-    padding: 10px 12px;
-    border-radius: 8px;
-    font-family: inherit;
-    outline: none;
-  }
-  input:focus, textarea:focus {
-    box-shadow: 0 0 12px rgba(95,95,255,0.14);
-    border-color: rgba(95,95,255,0.4);
-  }
-  .meta { display:flex; justify-content:flex-end; font-size:0.85rem; color:#9aa0ff; }
-  .char-count { opacity:0.9; }
-
-  .form-actions { display:flex; gap:12px; margin-top:8px; align-items:center; }
-  button {
-    background: linear-gradient(90deg,#5f5fff,#bb86fc);
-    color: #07112a;
-    font-weight:700;
-    border: none;
-    padding:10px 16px;
-    border-radius: 10px;
-    cursor:pointer;
-  }
-  button.ghost {
-    background: transparent;
-    color: #d6d6ff;
-    border: 1px solid rgba(255,255,255,0.06);
-  }
-  button:disabled { opacity:0.6; cursor:not-allowed; }
-
-  .error { color:#ff8b9e; font-size:0.85rem; min-height:1.1em; }
-  #form-status { margin-top: 12px; font-weight:600; color:#bfe5c7; }
-
-    /* Footer */
-    footer {
-        text-align: center;
-        padding: 20px;
-        border-top: 1px solid rgba(95,95,255,0.4);
-        font-size: 0.9rem;
-        color: #aaa;
-    }
-
-    /* Floating Nav */
-    .floating-nav {
-        position: fixed;
-        bottom: 20px; left: 50%;
-        transform: translateX(-50%);
-        background: rgba(20,20,20,0.9);
-        border: 1px solid rgba(95,95,255,0.4);
-        border-radius: 30px;
-        padding: 10px 20px;
-        display: flex; gap: 20px;
-        box-shadow: 0 0 15px rgba(95,95,255,0.5);
-        backdrop-filter: blur(8px);
-        z-index: 1000;
-    }
-    .floating-nav a {
-        color: #e4e4e4;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-    .floating-nav a:hover {color: #bb86fc;}
 </style>
 </head>
 <body>
@@ -340,9 +420,9 @@
 
     <!-- Optional: quick contact info block -->
     <aside class="contact-info" aria-label="Quick contact info">
-      <p><strong>Email</strong><br><a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      <p><strong>GitHub</strong><br><a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-      <p><strong>LinkedIn</strong><br><a href="https://linkedin.com/in/yourlinkedin" target="_blank">yourlinkedin</a></p>
+      <p><strong>Email</strong><br><a href="karthikparaambil9@gmail.com">karthikparambil9@gmail.com</a></p>
+      <p><strong>GitHub</strong><br><a href="https://github.com/karthikparambil" target="_blank">karthikparambil</a></p>
+      <p><strong>LinkedIn</strong><br><a href="www.linkedin.com/in/karthikparambil9" target="_blank">karthikparambil9</a></p>
     </aside>
   </div>
 </section>
