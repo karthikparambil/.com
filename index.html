@@ -1,729 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
     <title>Portfolio</title>
-  <link rel="stylesheet" href="templates/style.css">
+    <link rel="stylesheet" href="templates/style.css">
 </head>
+
 <body>
-<div class="cyber-bg-elements">
-    <div class="data-node"></div>
-    <div class="data-node"></div>
-    <div class="data-node"></div>
-    <div class="data-node"></div>
-    <div class="data-node"></div>
-    <div class="data-node"></div>
-</div>
-<main>
-    <header id="heroHeader" class="hero-header">
-        <nav id="navBar" class="nav">
+    <div class="cyber-bg-elements">
+        <div class="data-node"></div>
+        <div class="data-node"></div>
+        <div class="data-node"></div>
+        <div class="data-node"></div>
+        <div class="data-node"></div>
+        <div class="data-node"></div>
+    </div>
+    <main>
+        <header id="heroHeader" class="hero-header">
+            <nav id="navBar" class="nav">
+                <div class="container">
+                    <div class="nav__brand">KARTHIK</div>
+                    <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                        <span class="nav__hamburger-top"></span>
+                        <span class="nav__hamburger-center"></span>
+                        <span class="nav__hamburger-bottom"></span>
+                    </button>
+                    <ul id="navList" class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#about">&lt;About &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#skills">&lt;Skills &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#certifications">&lt;Certifications &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#projects">&lt;Projects &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#experience">&lt;Experience &sol;&gt;</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#connect">&lt;Connect &sol;&gt;</a>
+                        </li>
+                    </ul>
+            </nav>
+            <section class="header__container container">
+                <div class="header__left">
+                    <span class="header__sup-text">Hello There! I am </span>
+                    <h1 class="header__title">
+                        <span class="header__title-1" data-role=" ETHICAL">KARTHIK</span>
+                        <span class="header__title-2" data-role="HACKER..">PARAMBIL</span>
+                    </h1>
+                    <p class="header__msg">Penetration Testing | Ethical Hacker | CTF Player </p>
+                    <a href="#" class="header__resume">Resume</a>
+                </div>
+                <div class="header__right">
+
+                </div>
+            </section>
+            <span class="header__bg"></span>
+        </header>
+        <section id="about" class="section">
             <div class="container">
-                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
-                    <span class="nav__hamburger-top"></span>
-                    <span class="nav__hamburger-center"></span>
-                    <span class="nav__hamburger-bottom"></span>
-                </button>
-                <ul id="navList" class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#about">&lt;About &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#skills">&lt;Skills &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#certifications">&lt;Certifications &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#projects">&lt;Projects &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#experience">&lt;Experience &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#connect">&lt;Connect &sol;&gt;</a>
-                    </li>
-                </ul>
-        </nav>
-        <section class="header__container container">
-            <div class="header__left">
-                <span class="header__sup-text">Hello There! I am </span>
-                <h1 class="header__title">
-                    <span class="header__title-1" data-role=" ETHICAL">KARTHIK</span>
-                    <span class="header__title-2" data-role="HACKER..">PARAMBIL</span>
-                </h1>
-                <p class="header__msg">Pentester | Ethical Hacker | CTF Player  </p>
-                <a href="#" class="header__resume">Resume</a>
-            </div>
-            <div class="header__right">
-                
+                <div class="about__header">
+                    <h2 class="about__title">About Me</h2>
+                    <div class="about__title-underline"></div>
+                    <p class="about__subtitle">Passionate Cybersecurity Researcher & Pentester</p>
+                </div>
+
+                <div class="about__content">
+                    <div class="about__main">
+                        <div class="about__intro-section">
+                            <p class="about__intro">
+                                I'm passionate about exploring the depths of cybersecurity, uncovering vulnerabilities,
+                                and building secure systems. My work spans ethical hacking,network pentesting , and
+                                offensive security with a current focus on Web Application Security.
+                            </p>
+
+                            <div class="about__quote">
+                                <div class="about__quote-icon">"</div>
+                                <p>As a Pentester and Ethical Hacker, my passion lies in uncovering vulnerabilities and
+                                    strengthening security through responsible and effective exploitation.</p>
+                            </div>
+                        </div>
+
+                        <div class="about__expertise">
+                            <div class="about__highlight">
+                                <div class="about__highlight-header">
+                                    <div class="about__highlight-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 12l2 2 4-4" />
+                                            <circle cx="12" cy="12" r="10" />
+                                        </svg>
+                                    </div>
+                                    <h3>Core Expertise</h3>
+                                </div>
+                                <ul class="about__skills">
+                                    <li>
+                                        <span class="skill-dot"></span>
+                                        Vulnerability Assessment & Penetration Testing
+                                    </li>
+                                    <li>
+                                        <span class="skill-dot"></span>
+                                        Web Application Security
+                                    </li>
+                                    <li>
+                                        <span class="skill-dot"></span>
+                                        Network Security
+                                    </li>
+                                    <li>
+                                        <span class="skill-dot"></span>
+                                        Offensive Security Research
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="about__highlight">
+                                <div class="about__highlight-header">
+                                    <div class="about__highlight-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                        </svg>
+                                    </div>
+                                    <h3>Current Focus</h3>
+                                </div>
+                                <p class="about__focus-text">
+                                    Specializing in Active Directory security, identifying critical weaknesses, and improving identity and access security across enterprise environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__visual">
+                        <div class="about__icon-container">
+                            <div class="about__icon">
+                                <svg viewBox="0 0 200 200" class="about__svg">
+                                    <defs>
+                                        <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#59FFB9" stop-opacity="0.8" />
+                                            <stop offset="50%" stop-color="#7218FA" stop-opacity="0.6" />
+                                            <stop offset="100%" stop-color="#00FF94" stop-opacity="0.8" />
+                                        </linearGradient>
+                                        <filter id="glow">
+                                            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                            <feMerge>
+                                                <feMergeNode in="coloredBlur" />
+                                                <feMergeNode in="SourceGraphic" />
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+
+                                    <path
+                                        d="M100 20 L160 40 L160 90 C160 140 100 180 100 180 C100 180 40 140 40 90 L40 40 Z"
+                                        stroke="url(#shieldGrad)" stroke-width="3" fill="none" opacity="0.9"
+                                        filter="url(#glow)" />
+
+                                    <path
+                                        d="M100 30 L150 50 L150 90 C150 130 100 165 100 165 C100 165 50 130 50 90 L50 50 Z"
+                                        stroke="#7218FA" stroke-width="2" fill="none" opacity="0.7" />
+
+                                    <g transform="translate(75, 80)">
+                                        <rect width="50" height="40" rx="5" stroke="#00FF94" stroke-width="2"
+                                            fill="rgba(0, 255, 148, 0.15)" />
+                                        <path d="M10 0 Q10 -15 25 -15 Q40 -15 40 0" stroke="#00FF94" stroke-width="3"
+                                            fill="none" />
+                                        <circle cx="25" cy="20" r="4" fill="#59FFB9" />
+                                        <rect x="23" y="20" width="4" height="15" fill="#59FFB9" />
+                                    </g>
+
+                                    <g opacity="0">
+                                        <circle cx="60" cy="60" r="3" fill="#59FFB9" class="pulse-node" />
+                                        <circle cx="140" cy="50" r="3" fill="#7218FA" class="pulse-node" />
+                                        <circle cx="150" cy="120" r="3" fill="#00FF94" class="pulse-node" />
+                                        <circle cx="50" cy="130" r="3" fill="#59FFB9" class="pulse-node" />
+                                        <circle cx="130" cy="140" r="3" fill="#7218FA" class="pulse-node" />
+                                    </g>
+
+
+                                </svg>
+                            </div>
+
+                            <!-- Floating Elements -->
+                            <div class="about__floating-elements">
+                                <div class="floating-element floating-element--1">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <div class="floating-element floating-element--2">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                    </svg>
+                                </div>
+                                <div class="floating-element floating-element--3">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l2 2 4-4" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <span class="header__bg"></span>
-    </header>
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about__header">
-                <h2 class="about__title">About Me</h2>
-                <div class="about__title-underline"></div>
-                <p class="about__subtitle">Passionate Cybersecurity Researcher & Pentester</p>
-            </div>
 
-            <div class="about__content">
-                <div class="about__main">
-                    <div class="about__intro-section">
-                        <p class="about__intro">
-                            I'm passionate about exploring the depths of cybersecurity, uncovering vulnerabilities,
-                            and building secure systems. My work spans ethical hacking,network pentesting , and
-                            offensive security with a current focus on Web Application Security.
+        <!-- Skills Section First (Better Flow) -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="skills__title">Technical Skills</h2>
+                <p class="skills__subtitle">Expertise across the cybersecurity spectrum</p>
+
+                <div class="skills__grid">
+                    <!-- Penetration Testing -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <path d="M50 10 L80 30 L80 70 L50 90 L20 70 L20 30 Z" stroke="#59FFB9" stroke-width="3"
+                                    fill="none" />
+                                <path d="M30 40 L70 40 M30 50 L70 50 M30 60 L60 60" stroke="#59FFB9" stroke-width="2" />
+                                <circle cx="50" cy="45" r="3" fill="#59FFB9" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Penetration Testing</h3>
+                        <p class="skill-card__description">Advanced vulnerability assessment and exploitation techniques
                         </p>
-
-                        <div class="about__quote">
-                            <div class="about__quote-icon">"</div>
-                            <p>As a Pentester and Ethical Hacker, my passion lies in uncovering vulnerabilities and strengthening security through responsible and effective exploitation.</p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 100%"></div>
                         </div>
                     </div>
 
-                    <div class="about__expertise">
-                        <div class="about__highlight">
-                            <div class="about__highlight-header">
-                                <div class="about__highlight-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 12l2 2 4-4"/>
-                                        <circle cx="12" cy="12" r="10"/>
-                                    </svg>
-                                </div>
-                                <h3>Core Expertise</h3>
+                    <!-- Web Application Security -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <rect x="20" y="30" width="60" height="40" rx="5" stroke="#7218FA" stroke-width="3"
+                                    fill="none" />
+                                <path d="M25 35 L75 35 M25 45 L70 45 M25 55 L65 55" stroke="#7218FA" stroke-width="2" />
+                                <circle cx="30" cy="40" r="2" fill="#7218FA" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Web App Security</h3>
+                        <p class="skill-card__description">OWASP Top 10, XSS, CSRF, SQL Injection, HTTP Request Smuggling, Business Logic Flaws and Modern Web Vulnerabilities</p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Network Security -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <circle cx="50" cy="50" r="30" stroke="#00FF94" stroke-width="3" fill="none" />
+                                <circle cx="50" cy="50" r="20" stroke="#00FF94" stroke-width="2" fill="none" />
+                                <circle cx="50" cy="50" r="10" stroke="#00FF94" stroke-width="1" fill="none" />
+                                <path d="M35 35 L65 65 M65 35 L35 65" stroke="#00FF94" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Network Security</h3>
+                        <p class="skill-card__description">Firewall management, IDS/IPS, VPN, and network protocol
+                            analysis</p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Cryptography -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <path d="M50 20 L70 40 L60 50 L80 70 L60 90 L50 80 L30 90 L20 70 L40 50 L30 40 Z"
+                                    stroke="#59FFB9" stroke-width="3" fill="none" />
+                                <path d="M35 35 L65 65 M65 35 L35 65" stroke="#59FFB9" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Active Directory Security</h3>
+                        <p class="skill-card__description">Kerberos Attacks,NTLM Attacks, Privilege Escalation Paths, Lateral Movement, and Identity Misconfigurations</p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Digital Forensics -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <rect x="25" y="25" width="50" height="50" rx="5" stroke="#7218FA" stroke-width="3"
+                                    fill="none" />
+                                <circle cx="35" cy="35" r="3" fill="#7218FA" />
+                                <circle cx="65" cy="35" r="3" fill="#7218FA" />
+                                <circle cx="35" cy="65" r="3" fill="#7218FA" />
+                                <circle cx="65" cy="65" r="3" fill="#7218FA" />
+                                <path d="M40 40 L60 60 M60 40 L40 60" stroke="#7218FA" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Digital Forensics</h3>
+                        <p class="skill-card__description">Incident response, evidence collection, and forensic analysis
+                        </p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Reverse Engineering -->
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <svg viewBox="0 0 100 100" class="skill-icon">
+                                <path d="M50 20 L80 50 L50 80 L20 50 Z" stroke="#00FF94" stroke-width="3" fill="none" />
+                                <circle cx="50" cy="30" r="3" fill="#00FF94" />
+                                <circle cx="70" cy="50" r="3" fill="#00FF94" />
+                                <circle cx="50" cy="70" r="3" fill="#00FF94" />
+                                <circle cx="30" cy="50" r="3" fill="#00FF94" />
+                                <path d="M50 30 L50 70 M30 50 L70 50" stroke="#00FF94" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-card__title">Reverse Engineering</h3>
+                        <p class="skill-card__description">Malware analysis, binary exploitation, and software reverse
+                            engineering</p>
+                        <div class="skill-card__progress">
+                            <div class="skill-card__progress-bar" style="--progress: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Cloud -->
+                <div class="skills-cloud">
+                    <h3 class="skills-cloud__title">Technologies & Tools</h3>
+                    <div class="skills-cloud__container">
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Gobuster</span>
+                        <span class="skill-tag">Hydra</span>
+                        <span class="skill-tag">Ffuf</span>
+                        <span class="skill-tag">SQLMap</span>
+                        <span class="skill-tag">Nessus</span>
+                        <span class="skill-tag">John the Ripper</span>
+                        <span class="skill-tag">Hashcat</span>
+                        <span class="skill-tag">Ghidra</span>
+                        <span class="skill-tag">Responder</span>
+                        <span class="skill-tag">Impacket</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2 class="certifications__title">Professional Certifications</h2>
+                <p class="certifications__subtitle">Validated expertise in cybersecurity and information security</p>
+
+                <div class="certifications__grid">
+                    <!-- Security+ Certification -->
+                    <div class="certification-card certification-card--left">
+                        <div class="certification-card__header">
+                            <div class="certification-card__icon">
+                                <svg viewBox="0 0 100 100" class="cert-icon">
+                                    <defs>
+                                        <linearGradient id="certGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#59FFB9" />
+                                            <stop offset="100%" stop-color="#00FF94" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Shield with Badge -->
+                                    <path d="M50 15 L75 25 L75 55 C75 75 50 85 50 85 C50 85 25 75 25 55 L25 25 Z"
+                                        stroke="url(#certGrad1)" stroke-width="3" fill="rgba(89, 255, 185, 0.1)" />
+                                    <!-- Badge/Certificate Icon -->
+                                    <rect x="35" y="35" width="30" height="20" rx="3" stroke="url(#certGrad1)"
+                                        stroke-width="2" fill="rgba(89, 255, 185, 0.15)" />
+                                    <path d="M40 42 L60 42 M40 46 L58 46 M40 50 L55 50" stroke="url(#certGrad1)"
+                                        stroke-width="1.5" />
+                                    <circle cx="50" cy="45" r="2" fill="url(#certGrad1)" />
+                                </svg>
                             </div>
-                            <ul class="about__skills">
-                                <li>
-                                    <span class="skill-dot"></span>
-                                    Vulnerability Assessment & Penetration Testing
-                                </li>
-                                <li>
-                                    <span class="skill-dot"></span>
-                                    Web Application Security
-                                </li>
-                                <li>
-                                    <span class="skill-dot"></span>
-                                    Network Security
-                                </li>
-                                <li>
-                                    <span class="skill-dot"></span>
-                                    Offensive Security Research
-                                </li>
-                            </ul>
+                            <div class="certification-card__badge">
+                                <span class="certification-card__badge-text">CompTIA</span>
+                            </div>
                         </div>
 
-                        <div class="about__highlight">
-                            <div class="about__highlight-header">
-                                <div class="about__highlight-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                                    </svg>
-                                </div>
-                                <h3>Current Focus</h3>
-                            </div>
-                            <p class="about__focus-text">
-                                Specializing in modern and advanced web application security, identifying complex vulnerabilities,
-                                and developing robust security solutions for enterprise environments.
+                        <div class="certification-card__content">
+                            <h3 class="certification-card__title">Security+</h3>
+                            <p class="certification-card__issuer">CompTIA</p>
+                            <p class="certification-card__description">
+                                Industry-leading certification validating foundational cybersecurity skills and
+                                knowledge.
+                                Covers network security, compliance, threats, vulnerabilities, and security operations.
                             </p>
+                            <div class="certification-card__details">
+                                <div class="certification-card__detail">
+                                    <span class="detail-label">Focus:</span>
+                                    <span class="detail-value">Core Security</span>
+                                </div>
+                                <div class="certification-card__detail">
+                                    <span class="detail-label">Level:</span>
+                                    <span class="detail-value">Entry to Intermediate</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="about__visual">
-                    <div class="about__icon-container">
-                        <div class="about__icon">
-                            <svg viewBox="0 0 200 200" class="about__svg">
-                                <defs>
-                                    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#59FFB9" stop-opacity="0.8"/>
-                                        <stop offset="50%" stop-color="#7218FA" stop-opacity="0.6"/>
-                                        <stop offset="100%" stop-color="#00FF94" stop-opacity="0.8"/>
-                                    </linearGradient>
-                                    <filter id="glow">
-                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                                        <feMerge>
-                                            <feMergeNode in="coloredBlur"/>
-                                            <feMergeNode in="SourceGraphic"/>
-                                        </feMerge>
-                                    </filter>
-                                </defs>
-
-                                <path d="M100 20 L160 40 L160 90 C160 140 100 180 100 180 C100 180 40 140 40 90 L40 40 Z"
-                                      stroke="url(#shieldGrad)" stroke-width="3" fill="none" opacity="0.9" filter="url(#glow)"/>
-
-                                <path d="M100 30 L150 50 L150 90 C150 130 100 165 100 165 C100 165 50 130 50 90 L50 50 Z"
-                                      stroke="#7218FA" stroke-width="2" fill="none" opacity="0.7"/>
-
-                                <g transform="translate(75, 80)">
-                                    <rect width="50" height="40" rx="5" stroke="#00FF94" stroke-width="2" fill="rgba(0, 255, 148, 0.15)"/>
-                                    <path d="M10 0 Q10 -15 25 -15 Q40 -15 40 0" stroke="#00FF94" stroke-width="3" fill="none"/>
-                                    <circle cx="25" cy="20" r="4" fill="#59FFB9"/>
-                                    <rect x="23" y="20" width="4" height="15" fill="#59FFB9"/>
-                                </g>
-
-                                <g opacity="0">
-                                    <circle cx="60" cy="60" r="3" fill="#59FFB9" class="pulse-node"/>
-                                    <circle cx="140" cy="50" r="3" fill="#7218FA" class="pulse-node"/>
-                                    <circle cx="150" cy="120" r="3" fill="#00FF94" class="pulse-node"/>
-                                    <circle cx="50" cy="130" r="3" fill="#59FFB9" class="pulse-node"/>
-                                    <circle cx="130" cy="140" r="3" fill="#7218FA" class="pulse-node"/>
-                                </g>
-
-
-                            </svg>
-                        </div>
-
-                        <!-- Floating Elements -->
-                        <div class="about__floating-elements">
-                            <div class="floating-element floating-element--1">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    <!-- ADIS Certification -->
+                    <div class="certification-card certification-card--right">
+                        <div class="certification-card__header">
+                            <div class="certification-card__icon">
+                                <svg viewBox="0 0 100 100" class="cert-icon">
+                                    <defs>
+                                        <linearGradient id="certGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#7218FA" />
+                                            <stop offset="100%" stop-color="#9D4EDD" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Advanced Diploma Icon -->
+                                    <rect x="25" y="25" width="50" height="35" rx="5" stroke="url(#certGrad2)"
+                                        stroke-width="3" fill="rgba(114, 24, 250, 0.1)" />
+                                    <!-- Diploma Scroll -->
+                                    <path d="M30 30 Q50 25 70 30 Q70 35 50 40 Q30 35 30 30" stroke="url(#certGrad2)"
+                                        stroke-width="2" fill="rgba(114, 24, 250, 0.15)" />
+                                    <path d="M30 40 Q50 35 70 40 Q70 45 50 50 Q30 45 30 40" stroke="url(#certGrad2)"
+                                        stroke-width="2" fill="rgba(114, 24, 250, 0.15)" />
+                                    <!-- Advanced Badge -->
+                                    <polygon points="45,20 55,20 52,15 48,15" stroke="url(#certGrad2)" stroke-width="2"
+                                        fill="rgba(114, 24, 250, 0.2)" />
+                                    <text x="50" y="18" text-anchor="middle" font-size="8"
+                                        fill="url(#certGrad2)">ADV</text>
                                 </svg>
                             </div>
-                            <div class="floating-element floating-element--2">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                                </svg>
-                            </div>
-                            <div class="floating-element floating-element--3">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M8 12l2 2 4-4"/>
-                                </svg>
+                            <div class="certification-card__badge certification-card__badge--advanced">
+                                <span class="certification-card__badge-text">Offenso Hackers Academy</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section First (Better Flow) -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="skills__title">Technical Skills</h2>
-            <p class="skills__subtitle">Expertise across the cybersecurity spectrum</p>
-
-            <div class="skills__grid">
-                <!-- Penetration Testing -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <path d="M50 10 L80 30 L80 70 L50 90 L20 70 L20 30 Z"
-                                  stroke="#59FFB9" stroke-width="3" fill="none"/>
-                            <path d="M30 40 L70 40 M30 50 L70 50 M30 60 L60 60"
-                                  stroke="#59FFB9" stroke-width="2"/>
-                            <circle cx="50" cy="45" r="3" fill="#59FFB9"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Penetration Testing</h3>
-                    <p class="skill-card__description">Advanced vulnerability assessment and exploitation techniques</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 100%"></div>
-                    </div>
-                </div>
-
-                <!-- Web Application Security -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <rect x="20" y="30" width="60" height="40" rx="5"
-                                  stroke="#7218FA" stroke-width="3" fill="none"/>
-                            <path d="M25 35 L75 35 M25 45 L70 45 M25 55 L65 55"
-                                  stroke="#7218FA" stroke-width="2"/>
-                            <circle cx="30" cy="40" r="2" fill="#7218FA"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Web App Security</h3>
-                    <p class="skill-card__description">OWASP Top 10, XSS, CSRF, SQL Injection, and modern web vulnerabilities</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 100%"></div>
-                    </div>
-                </div>
-
-                <!-- Network Security -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <circle cx="50" cy="50" r="30" stroke="#00FF94" stroke-width="3" fill="none"/>
-                            <circle cx="50" cy="50" r="20" stroke="#00FF94" stroke-width="2" fill="none"/>
-                            <circle cx="50" cy="50" r="10" stroke="#00FF94" stroke-width="1" fill="none"/>
-                            <path d="M35 35 L65 65 M65 35 L35 65" stroke="#00FF94" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Network Security</h3>
-                    <p class="skill-card__description">Firewall management, IDS/IPS, VPN, and network protocol analysis</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 100%"></div>
-                    </div>
-                </div>
-
-                <!-- Cryptography -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <path d="M50 20 L70 40 L60 50 L80 70 L60 90 L50 80 L30 90 L20 70 L40 50 L30 40 Z"
-                                  stroke="#59FFB9" stroke-width="3" fill="none"/>
-                            <path d="M35 35 L65 65 M65 35 L35 65" stroke="#59FFB9" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Cryptography</h3>
-                    <p class="skill-card__description">Encryption algorithms, digital signatures, and cryptographic protocols</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 90%"></div>
-                    </div>
-                </div>
-
-                <!-- Digital Forensics -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <rect x="25" y="25" width="50" height="50" rx="5"
-                                  stroke="#7218FA" stroke-width="3" fill="none"/>
-                            <circle cx="35" cy="35" r="3" fill="#7218FA"/>
-                            <circle cx="65" cy="35" r="3" fill="#7218FA"/>
-                            <circle cx="35" cy="65" r="3" fill="#7218FA"/>
-                            <circle cx="65" cy="65" r="3" fill="#7218FA"/>
-                            <path d="M40 40 L60 60 M60 40 L40 60" stroke="#7218FA" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Digital Forensics</h3>
-                    <p class="skill-card__description">Incident response, evidence collection, and forensic analysis</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 70%"></div>
-                    </div>
-                </div>
-
-                <!-- Reverse Engineering -->
-                <div class="skill-card">
-                    <div class="skill-card__icon">
-                        <svg viewBox="0 0 100 100" class="skill-icon">
-                            <path d="M50 20 L80 50 L50 80 L20 50 Z"
-                                  stroke="#00FF94" stroke-width="3" fill="none"/>
-                            <circle cx="50" cy="30" r="3" fill="#00FF94"/>
-                            <circle cx="70" cy="50" r="3" fill="#00FF94"/>
-                            <circle cx="50" cy="70" r="3" fill="#00FF94"/>
-                            <circle cx="30" cy="50" r="3" fill="#00FF94"/>
-                            <path d="M50 30 L50 70 M30 50 L70 50" stroke="#00FF94" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="skill-card__title">Reverse Engineering</h3>
-                    <p class="skill-card__description">Malware analysis, binary exploitation, and software reverse engineering</p>
-                    <div class="skill-card__progress">
-                        <div class="skill-card__progress-bar" style="--progress: 55%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Cloud -->
-            <div class="skills-cloud">
-                <h3 class="skills-cloud__title">Technologies & Tools</h3>
-                <div class="skills-cloud__container">
-                    <span class="skill-tag">Burp Suite</span>
-                    <span class="skill-tag">Metasploit</span>
-                    <span class="skill-tag">Wireshark</span>
-                    <span class="skill-tag">Nmap</span>
-                    <span class="skill-tag">Nikto</span>
-                    <span class="skill-tag">Feroxbuster</span>
-                    <span class="skill-tag">Hydra</span>
-                    <span class="skill-tag">Ffuf</span>
-                    <span class="skill-tag">SQLMap</span>
-                    <span class="skill-tag">Nessus</span>
-                    <span class="skill-tag">John the Ripper</span>
-                    <span class="skill-tag">Hashcat</span>
-                    <span class="skill-tag">Ghidra</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="certifications__title">Professional Certifications</h2>
-            <p class="certifications__subtitle">Validated expertise in cybersecurity and information security</p>
-
-            <div class="certifications__grid">
-                <!-- Security+ Certification -->
-                <div class="certification-card certification-card--left">
-                    <div class="certification-card__header">
-                        <div class="certification-card__icon">
-                            <svg viewBox="0 0 100 100" class="cert-icon">
-                                <defs>
-                                    <linearGradient id="certGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#59FFB9"/>
-                                        <stop offset="100%" stop-color="#00FF94"/>
-                                    </linearGradient>
-                                </defs>
-                                <!-- Shield with Badge -->
-                                <path d="M50 15 L75 25 L75 55 C75 75 50 85 50 85 C50 85 25 75 25 55 L25 25 Z"
-                                      stroke="url(#certGrad1)" stroke-width="3" fill="rgba(89, 255, 185, 0.1)"/>
-                                <!-- Badge/Certificate Icon -->
-                                <rect x="35" y="35" width="30" height="20" rx="3"
-                                      stroke="url(#certGrad1)" stroke-width="2" fill="rgba(89, 255, 185, 0.15)"/>
-                                <path d="M40 42 L60 42 M40 46 L58 46 M40 50 L55 50"
-                                      stroke="url(#certGrad1)" stroke-width="1.5"/>
-                                <circle cx="50" cy="45" r="2" fill="url(#certGrad1)"/>
-                            </svg>
-                        </div>
-                        <div class="certification-card__badge">
-                            <span class="certification-card__badge-text">CompTIA</span>
-                        </div>
-                    </div>
-
-                    <div class="certification-card__content">
-                        <h3 class="certification-card__title">Security+</h3>
-                        <p class="certification-card__issuer">CompTIA</p>
-                        <p class="certification-card__description">
-                            Industry-leading certification validating foundational cybersecurity skills and knowledge.
-                            Covers network security, compliance, threats, vulnerabilities, and security operations.
-                        </p>
-                        <div class="certification-card__details">
-                            <div class="certification-card__detail">
-                                <span class="detail-label">Focus:</span>
-                                <span class="detail-value">Core Security</span>
-                            </div>
-                            <div class="certification-card__detail">
-                                <span class="detail-label">Level:</span>
-                                <span class="detail-value">Entry to Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ADIS Certification -->
-                <div class="certification-card certification-card--right">
-                    <div class="certification-card__header">
-                        <div class="certification-card__icon">
-                            <svg viewBox="0 0 100 100" class="cert-icon">
-                                <defs>
-                                    <linearGradient id="certGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#7218FA"/>
-                                        <stop offset="100%" stop-color="#9D4EDD"/>
-                                    </linearGradient>
-                                </defs>
-                                <!-- Advanced Diploma Icon -->
-                                <rect x="25" y="25" width="50" height="35" rx="5"
-                                      stroke="url(#certGrad2)" stroke-width="3" fill="rgba(114, 24, 250, 0.1)"/>
-                                <!-- Diploma Scroll -->
-                                <path d="M30 30 Q50 25 70 30 Q70 35 50 40 Q30 35 30 30"
-                                      stroke="url(#certGrad2)" stroke-width="2" fill="rgba(114, 24, 250, 0.15)"/>
-                                <path d="M30 40 Q50 35 70 40 Q70 45 50 50 Q30 45 30 40"
-                                      stroke="url(#certGrad2)" stroke-width="2" fill="rgba(114, 24, 250, 0.15)"/>
-                                <!-- Advanced Badge -->
-                                <polygon points="45,20 55,20 52,15 48,15"
-                                         stroke="url(#certGrad2)" stroke-width="2" fill="rgba(114, 24, 250, 0.2)"/>
-                                <text x="50" y="18" text-anchor="middle" font-size="8" fill="url(#certGrad2)">ADV</text>
-                            </svg>
-                        </div>
-                        <div class="certification-card__badge certification-card__badge--advanced">
-                            <span class="certification-card__badge-text">Offenso Hackers Academy</span>
-                        </div>
-                    </div>
-
-                    <div class="certification-card__content">
-                        <h3 class="certification-card__title">ADIS</h3>
-                        <p class="certification-card__issuer">Advanced Diploma in Information Security</p>
-                        <p class="certification-card__description">
-                            Comprehensive advanced diploma covering enterprise-level information security management,
-                            risk assessment, security architecture, and advanced cybersecurity methodologies.
-                        </p>
-                        <div class="certification-card__details">
-                            <div class="certification-card__detail">
-                                <span class="detail-label">Focus:</span>
-                                <span class="detail-value">Enterprise Security</span>
-                            </div>
-                            <div class="certification-card__detail">
-                                <span class="detail-label">Level:</span>
-                                <span class="detail-value">Advanced </span>
+                        <div class="certification-card__content">
+                            <h3 class="certification-card__title">ADIS</h3>
+                            <p class="certification-card__issuer">Advanced Diploma in Information Security</p>
+                            <p class="certification-card__description">
+                                Comprehensive advanced diploma covering enterprise-level information security
+                                management,
+                                risk assessment, security architecture, and advanced cybersecurity methodologies.
+                            </p>
+                            <div class="certification-card__details">
+                                <div class="certification-card__detail">
+                                    <span class="detail-label">Focus:</span>
+                                    <span class="detail-value">Enterprise Security</span>
+                                </div>
+                                <div class="certification-card__detail">
+                                    <span class="detail-label">Level:</span>
+                                    <span class="detail-value">Advanced </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-   
-    <!-- Projects & Hands-On Experience Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <header class="projects__header">
-                <h2 class="projects__title">Projects</h2>
-                <p class="projects__subtitle">A showcase of my recent work across different cybersecurity domains. Each project represents a unique challenge and solution.</p>
-            </header>
-            
-            <!-- Filter Buttons -->
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="machines">Machines</button>
-                <button class="filter-btn" data-filter="tools">Tools</button>
-                <button class="filter-btn" data-filter="automation">Automation</button>
-                <button class="filter-btn" data-filter="ctf">CTF Challenges</button>
-                <button class="filter-btn" data-filter="exploits">Exploits</button>
-            </div>
-            
-            <div class="projects-grid" id="projectsContainer">
-                <!--Mission Escape -->
-                <div class="project-card" data-category="machines">
-                    <img src="assets/images/escape.png" alt="Custom CTF Challenges" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Mission:Escape</h3>
-                        <p class="project-type">Prison-Break themed Vulnerable Machines</p>
-                        <p class="project-description">A deliberately vulnerable machine contains Web Exploitation, misconfigurations, weak credentials, and logic flaws across Web and OS to "escape" by capturing the final flag.</p>
-                        <div class="project-tags">
-                            <span class="tag">Machines</span>
-                            <span class="tag">Web Exploitation</span>
-                            <span class="tag">Cryptography</span>
-                            <span class="tag">Privilage Escalation</span>
-                        </div>
 
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/Mission-Escape" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
+        <!-- Projects & Hands-On Experience Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <header class="projects__header">
+                    <h2 class="projects__title">Projects</h2>
+                    <p class="projects__subtitle">A showcase of my recent work across different cybersecurity domains.
+                        Each project represents a unique challenge and solution.</p>
+                </header>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="machines">Machines</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="ctf">CTF Challenges</button>
+                    <button class="filter-btn" data-filter="exploits">Exploits</button>
+                </div>
+
+                <div class="projects-grid" id="projectsContainer">
+                    <!--Mission Escape -->
+                    <div class="project-card" data-category="machines">
+                        <img src="assets/images/escape.png" alt="Custom CTF Challenges" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Mission:Escape</h3>
+                            <p class="project-type">Prison-Break themed Vulnerable Machines</p>
+                            <p class="project-description">A deliberately vulnerable machine contains Web Exploitation,
+                                misconfigurations, weak credentials, and logic flaws across Web and OS to "escape" by
+                                capturing the final flag.</p>
+                            <div class="project-tags">
+                                <span class="tag">Machines</span>
+                                <span class="tag">Web Exploitation</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Privilage Escalation</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/Mission-Escape" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
                     <!-- Machine Space -->
-                <div class="project-card" data-category="machines">
-                    <img src="assets/images/space.webp" alt="Custom CTF Challenges" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Mission:Space</h3>
-                        <p class="project-type">Space themed Vulnerable Machines</p>
-                        <p class="project-description">A space-station themed Machine for Pentesting, focused on Web Exploitation, security misconfigurations, digital forensics and privilege escalation challenges within a simulated space station environment.
+                    <div class="project-card" data-category="machines">
+                        <img src="assets/images/space.webp" alt="Custom CTF Challenges" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Mission:Space</h3>
+                            <p class="project-type">Space themed Vulnerable Machines</p>
+                            <p class="project-description">A space-station themed Machine for Pentesting, focused on Web
+                                Exploitation, security misconfigurations, digital forensics and privilege escalation
+                                challenges within a simulated space station environment.
                             </p>
-                        <div class="project-tags">
-                            <span class="tag">Machines</span>
-                            <span class="tag">Web Exploitation</span>
-                            <span class="tag">Cryptography</span>
-                            <span class="tag">Privilage Escalation</span>
-                        </div>
+                            <div class="project-tags">
+                                <span class="tag">Machines</span>
+                                <span class="tag">Web Exploitation</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Privilage Escalation</span>
+                            </div>
 
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/Mission-Space" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/Mission-Space" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            <!-- Custom CTF Challenges -->
-                <div class="project-card" data-category="ctf">
-                    <img src="assets/images/ctf.jpg" alt="CTF Challenges" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">CTF </h3>
-                        <p class="project-type">Custom Capture The Flag Challenges</p>
-                        <p class="project-description">
-                            Custom-designed Capture The Flag challenges for various skill levels. Each challenge focuses on 
-                            specific cybersecurity concepts and requires creative problem-solving approaches for success.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Web Exploitation</span>
-                            <span class="tag">Forensics</span>
-                        </div>
-                        
-                        <div class="project-stats" style="display: flex;">
-                            <div class="stat-item" style="text-align: center; margin-right: 11px;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">10+</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Challenges</div>
+                    <!-- Custom CTF Challenges -->
+                    <div class="project-card" data-category="ctf">
+                        <img src="assets/images/ctf.jpg" alt="CTF Challenges" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">CTF </h3>
+                            <p class="project-type">Custom Capture The Flag Challenges</p>
+                            <p class="project-description">
+                                Custom-designed Capture The Flag challenges for various skill levels. Each challenge
+                                focuses on
+                                specific cybersecurity concepts and requires creative problem-solving approaches for
+                                success.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Web Exploitation</span>
+                                <span class="tag">Forensics</span>
                             </div>
-                            <div class="stat-item" style="text-align: center;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">2+</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Categories</div>
-                            </div>
-                        </div>
 
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/CTF" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
+                            <div class="project-stats" style="display: flex;">
+                                <div class="stat-item" style="text-align: center; margin-right: 11px;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">10+</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Challenges</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">2+</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Categories</div>
+                                </div>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/CTF" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            <!-- gfinder     -->
-                <div class="project-card" data-category="tools">
-                    <img src="assets/images/gfinder.jpg" alt="gfinder" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Gfinder</h3>
-                        <p class="project-type">Web based finding tool</p>
-                        <p class="project-description">
-                            Gfinder is a powerful search tool to find code, files, and hidden secrets instantly using powerful filters and clear visual results with displays the equivalent Linux command. 
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                        </div>
-                        <div class="project-stats" style="display: flex;">
-                            <div class="stat-item" style="text-align: center; margin-right: 11px;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;"></div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;"></div>
+                    <!-- gfinder     -->
+                    <div class="project-card" data-category="tools">
+                        <img src="assets/images/gfinder.jpg" alt="gfinder" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Gfinder</h3>
+                            <p class="project-type">Web based finding tool</p>
+                            <p class="project-description">
+                                Gfinder is a powerful search tool to find code, files, and hidden secrets instantly
+                                using powerful filters and clear visual results with displays the equivalent Linux
+                                command.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
                             </div>
-                            <div class="stat-item" style="text-align: center;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;"></div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;"></div>
+                            <div class="project-stats" style="display: flex;">
+                                <div class="stat-item" style="text-align: center; margin-right: 11px;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;"></div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;"></div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;"></div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/gfinder" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/gfinder" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            <!-- scanix     -->
-                <div class="project-card" data-category="tools">
-                    <img src="assets/images/scanix.png" alt="gfinder" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Scanix</h3>
-                        <p class="project-type">Automated reconnaissance suite for web applications</p>
-                        <p class="project-description">
-                            Scanix is a powerful automation tool that streamlines the initial reconnaissance phase of penetration testing. It orchestrates multiple security tools Nmap, Feroxbuster, Nikto across parallel terminals to provide comprehensive target assessment.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Bash</span>
-                        </div>
-
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/scanix" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                                <!-- Pwnkit Collection -->
-                <div class="project-card" data-category="automation">
-                    <img src="assets/images/pwnkit.png" alt="Pwnkit Collection" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Pwnkit </h3>
-                        <p class="project-type">Collection of Pentesting Automation Scripts</p>
-                        <p class="project-description">
-                            Comprehensive collection of Python and Bash scripts designed to automate penetration testing workflows.
-                            Features include network scanning, vulnerability assessment, and post-exploitation modules.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Automation</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Bash</span>
-                        </div>
-                        <div class="project-stats" style="display: flex;">
-                            <div class="stat-item" style="text-align: center; margin-right: 11px;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">5+</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Scripts</div>
+                    <!-- scanix     -->
+                    <div class="project-card" data-category="tools">
+                        <img src="assets/images/scanix.png" alt="gfinder" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Scanix</h3>
+                            <p class="project-type">Automated reconnaissance suite for web applications</p>
+                            <p class="project-description">
+                                Scanix is a powerful automation tool that streamlines the initial reconnaissance phase
+                                of penetration testing. It orchestrates multiple security tools Nmap, Feroxbuster, Nikto
+                                across parallel terminals to provide comprehensive target assessment.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Bash</span>
                             </div>
-                            <div class="stat-item" style="text-align: center;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">85%</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Time Reduction</div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/scanix" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
                             </div>
                         </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/pwnkit" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
-                        </div>
                     </div>
-                </div>
 
-                                <!-- LXD2ROOT -->
-                <div class="project-card" data-category="exploits">
-                    <img src="assets/images/lxd.png" alt="Custom CTF Challenges" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">LXD2ROOT</h3>
-                        <p class="project-type">LXD Privilege Escalation Exploit</p>
-                        <p class="project-description"> Automated LXD exploitation script where users in `lxd` group allows root access through container breakout. Exploits the LXD container breakout vulnerability to gain root access on target systems.</p>
-                        <div class="project-tags">
-                            <span class="tag">CVE-2023-5536</span>
-                            <span class="tag">Privilege Escalation</span>
-                            <span class="tag">LXD</span>
-                            <span class="tag">Container</span>
-                        </div>
-
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/lxd2root" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="project-card" data-category="ctf">
-                    <img src="assets/images/walkthrough.jpg" alt="CTF Writeups" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">CTF Writeups & Solutions</h3>
-                        <p class="project-type">Capture The Flag Challenge Solutions</p>
-                        <p class="project-description">
-                            Comprehensive collection of detailed CTF writeups featuring step-by-step exploitation
-                            techniques, vulnerability analysis, and creative problem-solving approaches from various
-                            cybersecurity competitions.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Web Exploitation</span>
-                            <span class="tag">Cryptography</span>
-                            <span class="tag">Forensics</span>
-                            <span class="tag">Tryhackme</span>
-                        </div>
-                        <div class="project-stats" style="display: flex;">
-                            <div class="stat-item" style="text-align: center; margin-right: 11px;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">20+</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Solves</div>
+                    <!-- Pwnkit Collection -->
+                    <div class="project-card" data-category="automation">
+                        <img src="assets/images/pwnkit.png" alt="Pwnkit Collection" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Pwnkit </h3>
+                            <p class="project-type">Collection of Pentesting Automation Scripts</p>
+                            <p class="project-description">
+                                Comprehensive collection of Python and Bash scripts designed to automate penetration
+                                testing workflows.
+                                Features include network scanning, vulnerability assessment, and post-exploitation
+                                modules.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Automation</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Bash</span>
                             </div>
-                            <div class="stat-item" style="text-align: center;">
-                                <div class="stat-number" style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">6+</div>
-                                <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Categories</div>
+                            <div class="project-stats" style="display: flex;">
+                                <div class="stat-item" style="text-align: center; margin-right: 11px;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">5+</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Scripts</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">85%</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Time Reduction
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/pwnkit" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
                             </div>
                         </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/karthikparambil/writeups" class="source-btn live" >
-                                <i class="fas fa-code"></i> View 
-                            </a>
-                            <a href="#" class="source-btn" style="opacity: 0;">
-                                <i class="fas fa-eye"></i> Live 
-                            </a>
-                            
+                    </div>
+
+                    <!-- LXD2ROOT -->
+                    <div class="project-card" data-category="exploits">
+                        <img src="assets/images/lxd.png" alt="Custom CTF Challenges" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">LXD2ROOT</h3>
+                            <p class="project-type">LXD Privilege Escalation Exploit</p>
+                            <p class="project-description"> Automated LXD exploitation script where users in `lxd` group
+                                allows root access through container breakout. Exploits the LXD container breakout
+                                vulnerability to gain root access on target systems.</p>
+                            <div class="project-tags">
+                                <span class="tag">CVE-2023-5536</span>
+                                <span class="tag">Privilege Escalation</span>
+                                <span class="tag">LXD</span>
+                                <span class="tag">Container</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/lxd2root" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                
 
-                <!-- Hash Identifier Tool ###commented###########################
+                    <div class="project-card" data-category="ctf">
+                        <img src="assets/images/walkthrough.jpg" alt="CTF Writeups" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">CTF Writeups & Solutions</h3>
+                            <p class="project-type">Capture The Flag Challenge Solutions</p>
+                            <p class="project-description">
+                                Comprehensive collection of detailed CTF writeups featuring step-by-step exploitation
+                                techniques, vulnerability analysis, and creative problem-solving approaches from various
+                                cybersecurity competitions.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Web Exploitation</span>
+                                <span class="tag">Cryptography</span>
+                                <span class="tag">Forensics</span>
+                                <span class="tag">Tryhackme</span>
+                            </div>
+                            <div class="project-stats" style="display: flex;">
+                                <div class="stat-item" style="text-align: center; margin-right: 11px;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">20+</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Solves</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number"
+                                        style="font-size: 2.4rem; font-weight: 700; color: #59FFB9;">6+</div>
+                                    <div class="stat-label" style="font-size: 1.2rem; opacity: 0.8;">Categories</div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/karthikparambil/writeups" class="source-btn live">
+                                    <i class="fas fa-code"></i> View
+                                </a>
+                                <a href="#" class="source-btn" style="opacity: 0;">
+                                    <i class="fas fa-eye"></i> Live
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Hash Identifier Tool ###commented###########################
                 <div class="project-card" data-category="tool">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hash Identifier Tool" class="project-img">
                     <div class="project-content">
@@ -763,205 +802,231 @@
 
 
 
-            </div>
-        </div>
-    </section>
-    <!-- Experience -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item1">
-                <div class="experience-header">
-                    <h4 class="company-name">Offenso Hackers Academy</h4>
-                    <h3>Cybersecurity Trainee</h3>
-                    <span class="employment-type">Full-time</span>
                 </div>
-                <span class="date-range">2025 - Present</span>
-                <p>Assisted in vulnerability assessments, penetration testing, and security audits under expert supervision. Gained practical experience with tools like Nmap, Metasploit, and Wireshark. Developed Custom CTFs and foundational skills in network security, ethical hacking, and secure coding practices.</p>
             </div>
-            <div class="timeline-item1">
-                <div class="experience-header">
-                    <h3>Cybersecurity Researcher</h3>
+        </section>
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item1">
+                    <div class="experience-header">
+                        <h4 class="company-name">Offenso Hackers Academy</h4>
+                        <h3>Cybersecurity Trainee</h3>
+                        <span class="employment-type">Full-time</span>
+                    </div>
+                    <span class="date-range">2025 - Present</span>
+                    <p>Assisted in vulnerability assessments, penetration testing, and security audits under expert
+                        supervision. Gained practical experience with tools like Nmap, Metasploit, and Wireshark.
+                        Developed Custom CTFs and foundational skills in network security, ethical hacking, and secure
+                        coding practices.</p>
                 </div>
-                <span class="date-range">2025 - Present</span>
-                <p>Conducting vulnerability research, penetration testing, and developing CTF challenges.</p>
-            </div>
-            <div class="timeline-item1">
-                <div class="experience-header">
-                    <h3>CTF Player</h3>
+                <div class="timeline-item1">
+                    <div class="experience-header">
+                        <h3>Cybersecurity Researcher</h3>
+                    </div>
+                    <span class="date-range">2025 - Present</span>
+                    <p>Conducting vulnerability research, penetration testing, and developing CTF challenges.</p>
                 </div>
-                <span class="date-range">2025 - Present</span>
-                <p>Competing in various cybersecurity competitions with focus on Offensive Security</p>
-            </div>
-            
-        </div>
-    </section>
+                <div class="timeline-item1">
+                    <div class="experience-header">
+                        <h3>CTF Player</h3>
+                    </div>
+                    <span class="date-range">2025 - Present</span>
+                    <p>Competing in various cybersecurity competitions with focus on Offensive Security</p>
+                </div>
 
-    <!-- Connect Section -->
-    <section id="connect" class="connect">
-        <div class="container">
-            <div class="connect__header">
-                <h2 class="connect__title">Let's Connect</h2>
-                <div class="connect__title-underline"></div>
-                <p class="connect__subtitle">Ready to collaborate on cybersecurity projects or discuss opportunities?</p>
             </div>
+        </section>
 
-            <div class="connect__content">
-                <div class="connect__info">
-                    <div class="connect__methods">
-                        <!-- Email Contact -->
-                        <div class="connect__method">
-                            <div class="connect__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
+        <!-- Connect Section -->
+        <section id="connect" class="connect">
+            <div class="container">
+                <div class="connect__header">
+                    <h2 class="connect__title">Let's Connect</h2>
+                    <div class="connect__title-underline"></div>
+                    <p class="connect__subtitle">Ready to collaborate on cybersecurity projects or discuss
+                        opportunities?</p>
+                </div>
+
+                <div class="connect__content">
+                    <div class="connect__info">
+                        <div class="connect__methods">
+                            <!-- Email Contact -->
+                            <div class="connect__method">
+                                <div class="connect__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </div>
+                                <div class="connect__details">
+                                    <h3>Email</h3>
+                                    <a href="mailto:karthikparambil9@gmail.com"
+                                        class="connect__link">karthikparambil9@gmail.com</a>
+                                </div>
                             </div>
-                            <div class="connect__details">
-                                <h3>Email</h3>
-                                <a href="mailto:karthikparambil9@gmail.com" class="connect__link">karthikparambil9@gmail.com</a>
+
+                            <div class="connect__method">
+                                <div class="connect__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </div>
+                                <div class="connect__details">
+                                    <h3>LinkedIn</h3>
+                                    <a href="http://www.linkedin.com/in/karthikparambil9" class="connect__link"
+                                        target="_blank">karthikparambil9</a>
+                                </div>
+                            </div>
+
+                            <div class="connect__method">
+                                <div class="connect__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </div>
+                                <div class="connect__details">
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/karthikparambil" class="connect__link"
+                                        target="_blank">karthikparambil<github class="com">
+                                            <karthikparambil></karthikparambil>
+                                        </github></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="connect__cta">
+                        <div class="connect__cta-content">
+                            <h3>Ready to work together?</h3>
+                            <p>Whether you need penetration testing, security consultation, or want to collaborate on
+                                cybersecurity challenges, I'm always interested in new opportunities.</p>
+                            <div class="connect__cta-buttons">
+                                <a href="mailto:karthikparambil9@gmail.com" class="btn btn--primary">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        class="btn__icon">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    Send Email
+                                </a>
+                                <a href="https://www.linkedin.com/in/karthikparambil9" class="btn btn--secondary"
+                                    target="_blank">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        class="btn__icon">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                    Connect
+                                </a>
                             </div>
                         </div>
-
-                        <div class="connect__method">
-                            <div class="connect__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" r="2"/>
-                                </svg>
-                            </div>
-                            <div class="connect__details">
-                                <h3>LinkedIn</h3>
-                                <a href="http://www.linkedin.com/in/karthikparambil9" class="connect__link" target="_blank">karthikparambil9</a>
-                            </div>
-                        </div>
-
-                        <div class="connect__method">
-                            <div class="connect__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                </svg>
-                            </div>
-                            <div class="connect__details">
-                                <h3>GitHub</h3>
-                                <a href="https://github.com/karthikparambil" class="connect__link" target="_blank">karthikparambil<github class="com">
-                                <karthikparambil></karthikparambil></github></a>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
+            </div>
 
-                <div class="connect__cta">
-                    <div class="connect__cta-content">
-                        <h3>Ready to work together?</h3>
-                        <p>Whether you need penetration testing, security consultation, or want to collaborate on cybersecurity challenges, I'm always interested in new opportunities.</p>
-                        <div class="connect__cta-buttons">
-                            <a href="mailto:karthikparambil9@gmail.com" class="btn btn--primary">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn__icon">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
+            <div class="connect__bg-elements">
+                <div class="connect__bg-node connect__bg-node--1"></div>
+                <div class="connect__bg-node connect__bg-node--2"></div>
+                <div class="connect__bg-node connect__bg-node--3"></div>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__main">
+                        <div class="footer__message">
+                            <h2 class="footer__title">Securing the Digital Future</h2>
+                            <p class="footer__quote">"In the ever-evolving landscape of cybersecurity, vigilance is not
+                                just a practice—it's a mindset. Every vulnerability discovered is a step toward a safer
+                                digital world."</p>
+                            <div class="footer__signature">
+                                <span class="footer__name">Karthik Parambil</span>
+                                <span class="footer__tagline">Breaking Systems to Build Secure Ones | Offensive Security
+</span>
+                            </div>
+                        </div>
+
+                        <div class="footer__stats">
+                            <div class="footer__stat">
+                                <div class="footer__stat-number">50+</div>
+                                <div class="footer__stat-label">Vulnerabilities Identified</div>
+                            </div>
+                            <div class="footer__stat">
+                                <div class="footer__stat-number">150+</div>
+                                <div class="footer__stat-label">CTF Challenges Solved</div>
+                            </div>
+                            <div class="footer__stat">
+                                <div class="footer__stat-number">10+</div>
+                                <div class="footer__stat-label">Projects Completed</div>
+                            </div>
+                            <div class="footer__stat">
+                                <div class="footer__stat-number">20+</div>
+                                <div class="footer__stat-label">Tools Mastered</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__bottom">
+                        <div class="footer__links">
+                            <a href="#heroHeader" class="footer__link">Home</a>
+                            <a href="#about" class="footer__link">About</a>
+                            <a href="#skills" class="footer__link">Skills</a>
+                            <a href="#projects" class="footer__link">Projects</a>
+                            <a href="#connect" class="footer__link">Connect</a>
+                        </div>
+
+                        <div class="footer__social">
+                            <a href="mailto:karthikparambil9@gmail.com" class="footer__social-link" title="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
                                 </svg>
-                                Send Email
                             </a>
-                            <a href="https://www.linkedin.com/in/karthikparambil9" class="btn btn--secondary" target="_blank">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn__icon">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" r="2"/>
+                            <a href="https://www.linkedin.com/in/karthikparambil9" class="footer__social-link"
+                                title="LinkedIn" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
                                 </svg>
-                                Connect
+                            </a>
+                            <a href="https://github.com/karthikparambil" class="footer__social-link" title="GitHub"
+                                target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
                             </a>
                         </div>
+
+                        <div class="footer__copyright">
+                            <p>&copy; 2025 Karthik Parambil. All rights reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="connect__bg-elements">
-            <div class="connect__bg-node connect__bg-node--1"></div>
-            <div class="connect__bg-node connect__bg-node--2"></div>
-            <div class="connect__bg-node connect__bg-node--3"></div>
-        </div>
-    </section>
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__main">
-                    <div class="footer__message">
-                        <h2 class="footer__title">Securing the Digital Future</h2>
-                        <p class="footer__quote">"In the ever-evolving landscape of cybersecurity, vigilance is not just a practice—it's a mindset. Every vulnerability discovered is a step toward a safer digital world."</p>
-                        <div class="footer__signature">
-                            <span class="footer__name">Karthik Parambil</span>
-                            <span class="footer__tagline">Web Application Pentester | Penetration Tester | CTF Player</span>
-                        </div>
-                    </div>
-
-                    <div class="footer__stats">
-                        <div class="footer__stat">
-                            <div class="footer__stat-number">50+</div>
-                            <div class="footer__stat-label">Vulnerabilities Identified</div>
-                        </div>
-                        <div class="footer__stat">
-                            <div class="footer__stat-number">150+</div>
-                            <div class="footer__stat-label">CTF Challenges Solved</div>
-                        </div>
-                        <div class="footer__stat">
-                            <div class="footer__stat-number">10+</div>
-                            <div class="footer__stat-label">Projects Completed</div>
-                        </div>
-                        <div class="footer__stat">
-                            <div class="footer__stat-number">20+</div>
-                            <div class="footer__stat-label">Tools Mastered</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer__bottom">
-                    <div class="footer__links">
-                        <a href="#heroHeader" class="footer__link">Home</a>
-                        <a href="#about" class="footer__link">About</a>
-                        <a href="#skills" class="footer__link">Skills</a>
-                        <a href="#projects" class="footer__link">Projects</a>
-                        <a href="#connect" class="footer__link">Connect</a>
-                    </div>
-
-                    <div class="footer__social">
-                        <a href="mailto:karthikparambil9@gmail.com" class="footer__social-link" title="Email">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/karthikparambil9" class="footer__social-link" title="LinkedIn" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect x="2" y="9" width="4" height="12"/>
-                                <circle cx="4" cy="4" r="2"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/karthikparambil" class="footer__social-link" title="GitHub" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="footer__copyright">
-                        <p>&copy; 2025 Karthik Parambil. All rights reserved. </p>
-                    </div>
-                </div>
+            <div class="footer__bg">
+                <div class="footer__bg-element footer__bg-element--1"></div>
+                <div class="footer__bg-element footer__bg-element--2"></div>
+                <div class="footer__bg-element footer__bg-element--3"></div>
+                <div class="footer__bg-element footer__bg-element--4"></div>
             </div>
-        </div>
-        <div class="footer__bg">
-            <div class="footer__bg-element footer__bg-element--1"></div>
-            <div class="footer__bg-element footer__bg-element--2"></div>
-            <div class="footer__bg-element footer__bg-element--3"></div>
-            <div class="footer__bg-element footer__bg-element--4"></div>
-        </div>
-    </footer>
-<script src="templates/script.js"></script>
+        </footer>
+        <script src="templates/script.js"></script>
 </body>
+
 </html>
